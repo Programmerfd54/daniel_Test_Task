@@ -1,0 +1,128 @@
+
+/*Шапка*/
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Пространство между элементами */
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: auto;
+ }
+ 
+header .logo{
+    display: grid;
+    width: 106px;
+    height: auto;
+    position: absolute;
+    margin-left: -1500px;
+}
+
+ .headem {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row; /* Изменил на горизонтальное расположение элементов */
+    flex-wrap: nowrap; /* Запрет переноса на новую строку */
+    padding: 20px;
+    gap: 35px;
+    justify-content: center;
+}
+
+.headem a, .headem button {
+    text-decoration: none;
+    color: rgba(107, 112, 126, 1);
+}
+.headem a{
+    margin-top: 7px;
+}
+
+.headem .btndowm, .headem .btnbuy {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.16px;
+}
+
+.headem .btndowm {
+    width: 126px;
+    height: 40px;
+    justify-content: center;
+
+    background: var(--download, linear-gradient(268deg, #0057FF 1.64%, #259BFF 97.95%));    box-shadow: 0px 2px 22px 0px rgba(0, 87, 255, 0.43);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.headem .btnbuy {
+    width: 126px;
+    height: 40px;
+    justify-content: center;
+
+    border: 1px solid var(--buy, #19B37D);
+    background: var(--buy, linear-gradient(87deg, #19B37D 13.35%, #188A7B 86.33%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+@media (min-width: 768px) {
+    header:justify-center {
+        justify-content: center;
+    }
+}
+
+/*Подвал*/
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Пространство между элементами */
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2200px; 
+}
+footer .logo{
+    margin-left: 150px;
+}
+.first {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Промежутки между столбцами */
+    text-align: justify;
+    align-items: center;
+    position: relative;
+}
+
+.first a {
+    text-decoration: none;
+    color: #8D8F91;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    max-width: calc(100% - 20px); /* Максимальная ширина элемента с учетом отступа */
+    white-space: nowrap; /* Запрет переноса текста */
+    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+    margin-right: 20px; /* Добавление дополнительного отступа между столбцами */
+}
+.first a:not(:last-child) {
+    margin-right: 110px; /* Добавление отступа между столбцами, кроме последнего столбца */
+}
+.footer-text {
+    grid-column: span 3;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 15px;
+}
